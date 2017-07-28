@@ -329,7 +329,7 @@ public void fetch_q() {
         distance = distFrom(lat1,lon1,latitude,longitude);
 
         if (distance >= 5000.00) {
-            flagDisp=true;
+            //flagDisp=true;
             //push loc2 to firebase and update loc1 there
             mDatabase.child("users").child("usercurrentlocation").child("latitude").setValue(latitude);
             mDatabase.child("users").child("usercurrentlocation").child("longitude").setValue(longitude);
